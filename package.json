@@ -1,8 +1,14 @@
 {
   "name": "experimenting-with-ai",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bun run . --watch",
+    "build": "bun build . --outdir=dist",
+    "start": "bun run dist/index.js",
+    "test": "bun test"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
